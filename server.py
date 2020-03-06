@@ -13,6 +13,10 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
+# 
+# Additions made by Natalie Hervieux 2019.
+# References the following code and are thus Copyright 2013 Abram Hindle and Copyright 2019 Hazel Victoria Campbell: 
+# https://github.com/uofa-cmput404/cmput404-slides/blob/master/examples/ObserverExampleAJAX/server.py
 #
 # You can start this by executing it in python:
 # python server.py
