@@ -20,7 +20,6 @@
         See the License for the specific language governing permissions and
         limitations under the License.
     "/>
-    <link rel="stylesheet" type="text/css" href="style.css">
     <script src="json2.js"></script>
   </head> 
   <!--https://www.w3schools.com/howto/howto_css_full_page.asp-->
@@ -89,8 +88,14 @@ function prepEntity(entity) {
 function clearFrame() {
     with(context) {
 	moveTo(0,0);
-	fillStyle = "#FFFFFF";
-	fillRect(0,0,W-50,H-50);
+	fillStyle = "#99B898"; 
+	fillRect(0,0,W/2,H/2);
+    fillStyle = "#FECEAB"; 
+    fillRect(W/2,H/2,W,H);
+    fillStyle = "#FF847C";
+    fillRect(0,H/2,W/2,H);
+    fillStyle = "#E84A5F"; 
+    fillRect(W/2,0,W,H/2);
     }
 
 }
@@ -260,15 +265,15 @@ mouse = (function() {
 // Add the application specific mouse listeners!
 //XXX: TODO Make these prettier!
 mouse.mousedowners.push(function(x,y,clicked,e) {
-    addEntityWithoutName({'x':x,'y':y,'colour':'#06A4FB','radius':6}); //start point
+    addEntityWithoutName({'x':x,'y':y,'colour':'white','radius':6}); //start point
 });
 
 mouse.mouseuppers.push(function(x,y,clicked,e) {
-    addEntityWithoutName({'x':x,'y':y,'colour':'#CCEDFF','radius':5}); //end point
+    addEntityWithoutName({'x':x,'y':y,'colour':'white','radius':5}); //end point
 });
 
 mouse.mousedraggers.push(function(x,y,clicked,e) {
-    addEntityWithoutName({'x':x,'y':y,'colour':'#73CDFF', //middle line
+    addEntityWithoutName({'x':x,'y':y,'colour':'#2A363B ', //middle line
                           'radius':2});
 });
 
